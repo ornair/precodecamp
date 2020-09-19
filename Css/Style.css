@@ -3,3 +3,31 @@ table, th, td {
     border-collapse: collapse;
     vertical-align: text-top;
   }
+
+  #heading3
+  {
+    color: brown;
+  }
+
+  .heading4
+  {
+    color: coral;
+  }
+  
+  input:checked
+  {
+    width: 30px;
+  }
+
+  div::before
+  {
+    content: "Hello ";
+  }
+
+  #tagh div{ /*เอาทั้งหมด*/
+    color: gold;
+  }
+
+  #tagh > div{ /*เอาเฉพาะลูกติด*/
+    color: hotpink;
+  }
