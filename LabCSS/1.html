@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/LabCSS.css">
+    <title>Lab CSS 1</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>คำถาม</th>
+            <th>คำตอบ</th>
+            <th>ตัวอย่าง</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td><h2>CSS Syntax ประกอบด้วยอะไรบ้าง</h2></td>
+            <td>ประกอบด้วย selector และ declaration block โดย declaration block ประกอบด้วย property และ value</td>
+            <td><img src="https://www.w3schools.com/css/selector.gif" alt="ตัวอย่าง CSS Syntax"></td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>การเขียน CSS มีกี่แบบอะไรบ้าง</td>
+            <td>มี 3 แบบ Extanal, Intanal, Inline</td>
+            <td>
+                <pre>
+                    1.Extanal จะเขียนไว้อีกไฟล์โดยที่เรียกใช้แบบนี้ 
+                    &lt;link rel="stylesheet" href="mystyle.css"&gt;
+
+                    2.Intanal จะเขียนไว้ในหน้าเดียวกัน แต่จะใส่ tag style เช่น
+                    &lt;style&gt;
+                        body {
+                          background-color: linen;
+                        }
+                        
+                        h1 {
+                          color: maroon;
+                          margin-left: 40px;
+                        }
+                    &lt;/style&gt;
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Selector มีกี่แบบอะไรบ้าง</td>
+            <td>
+                มี 5 ประเภท คือ
+                <ul>
+                    <li>Simple selectors จะ based on name, id, class</li>
+                    <li>Combinator selectors </li>
+                    <li>Pseudo-class selectors</li>
+                    <li>Pseudo-elements selectors </li>
+                    <li>Attribute selectors</li>
+                </ul>
+            </td>
+            <td>
+                <pre>
+                    Simple selectors จะ based on name, id, class
+
+                    Combinator selectors จะมีการใช้สัญลักษณ์ ดังนี้
+                        descendant selector (space)
+                        child selector (>)
+                        adjacent sibling selector (+)
+                        general sibling selector (~)
+
+                    Pseudo-class selectors จะมีการใช้ state ของ element เช่น 
+                        /* mouse over link */
+                            a:hover {
+                            color: #FF00FF;
+                        }
+
+                    Pseudo-elements selectors จะใช้แค่ส่วนหนึ่งของ element เช่น
+                        p::first-line {
+                            color: #ff0000;
+                            font-variant: small-caps;
+                        }
+
+                    Attribute selectors ใช้เฉพาะบาง attribute เช่น
+                        a[target="_blank"] {
+                            background-color: yellow;
+                        }
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Combinator มีกี่แบบอะไรบ้าง</td>
+            <td>มี 4 แบบ คือ
+                <ul>
+                    <li>
+                        descendant selector (space)
+                    </li>
+                    <li>child selector (>)</li>
+                    <li>adjacent sibling selector (+)</li>
+                    <li>general sibling selector (~)</li>
+                </ul>
+            </td>
+            <td>
+                <pre>
+                descendant selector (space)
+                    div p {
+                        background-color: yellow;
+                    }
+
+                child selector (>)
+                    div > p {
+                        background-color: yellow;
+                    }
+
+                adjacent sibling selector (+)
+                    div + p {
+                        background-color: yellow;
+                    }
+
+                general sibling selector (~)
+                    div ~ p {
+                        background-color: yellow;
+                    }
+                </pre>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
